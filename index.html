@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tamerlane: "#007882",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section class="py-5 bg-gray-500">
+      <div class="w-full p-5">
+        <div class="bg-white flex justify-between p-5 rounded-xl">
+          <div class="w-full flex items-center gap-8">
+            <div>
+              <img src="./img/team_clipart.png" alt="err" />
+            </div>
+            <div>
+              <p class="font-semibold text-2xl mb-2">
+                Welcome to the board
+                <span class="text-teal-600">Tamerlane & Sons Co.</span>
+              </p>
+              <p class="font-semibold text-2xl mb-5">
+                Thanks for using QuickManage TMS
+              </p>
+              <p class="font-semibold text-[16px] text-gray-500">
+                The QM dashboard helps you prioritize your work by surfacing key
+                information about everything you need in your business
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./img/amirTemur.png" alt="err" />
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-1/4">
+            <div class="bg-white p-3 rounded-xl mt-5">
+              <p class="text-current font-bold text-xl mb-5">Current trips</p>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/car.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">8</p>
+                  <i class="font-bold text-trips">Upcoming Trips</i>
+                </div>
+              </div>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl mt-5 relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/car.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">11</p>
+                  <i class="font-bold text-trips">In Transit trips</i>
+                </div>
+              </div>
+              <hr class="w-full mb-2 mt-5" />
+              <div class="flex items-center font-bold gap-3">
+                <div>
+                  <img src="./img/plusebtn.png" alt="err" />
+                </div>
+                <p class="text-plusebtn">Add New Trip</p>
+              </div>
+            </div>
+            <div class="bg-white px-3 py-4 rounded-xl mt-5">
+              <p class="text-current font-bold text-xl mb-5">Invoices</p>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/file.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">32</p>
+                  <i class="font-bold text-trips">Open Invoices</i>
+                </div>
+              </div>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl mt-5 relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/file.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">69</p>
+                  <i class="font-bold text-trips">Invoiced</i>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded-xl mt-5">
+              <p class="text-current font-bold text-xl mb-5">Board Assets</p>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/board-assets-1.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">82</p>
+                  <i class="font-bold text-trips">Customers</i>
+                </div>
+              </div>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl mt-5 relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/board-assets-2.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">16</p>
+                  <i class="font-bold text-trips">Staffs</i>
+                </div>
+              </div>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl mt-5 relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/board-assets-3.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">23</p>
+                  <i class="font-bold text-trips">Drivers</i>
+                </div>
+              </div>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl mt-5 relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/board-assets-4.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">21</p>
+                  <i class="font-bold text-trips">Trucks</i>
+                </div>
+              </div>
+              <div class="bg-gray-200 px-2 py-1 rounded-xl mt-5 relative">
+                <div class="absolute top-[-10px]">
+                  <img src="./img/board-assets-5.png" alt="err" />
+                </div>
+                <div class="text-end">
+                  <p class="text-2xl font-bold text-current">15</p>
+                  <i class="font-bold text-trips">Trailers</i>
+                </div>
+              </div>
+              <hr class="w-full mb-2 mt-5" />
+              <div class="flex items-center font-bold gap-3">
+                <div>
+                  <img src="./img/plusebtn.png" alt="err" />
+                </div>
+                <p class="text-plusebtn">Add New Trip</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 mt-5">
+            <div class="bg-white px-2 py-4 rounded-xl">
+              <div class="flex items-center justify-between">
+                <p class="text-current font-bold">Financial Statistics</p>
+                <p class="text-current font-bold">2022</p>
+              </div>
+              <hr class="mt-3" />
+              <div class="flex mt-3 gap-3">
+                <div class="w-4/6">
+                  <div>
+                    <p class="text-pul text-xl font-bold">$2,152,623.07</p>
+                    <div class="flex gap-1 items-center  mt-2">
+                      <p class="font-semibold">Net Gross for 2022</p>
+                      <img src="./img/infobtn.png" alt="err" />
+                    </div>
+                  </div>
+                  <div class="grid gap-4 grid-cols-2 grid-rows-6 mt-8 mb-[70px]">
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-4/6  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$500,006.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-7/12  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$450,650.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-10/12  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$615,254.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-7/12  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$51,300.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="text-jan font-semibold">Jan</p> 
+                        <div class="w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-1/2  rounded-left px-3  bg-gradient-to-r from-purple-500 to-pink-500">
+                                <p class="text-black">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" flex items-center mb-[-20px]">
+                    <div class="w-px h-5/6 bg-slate-400 line-height-100">
+                    </div>
+                </div>
+                <div>
+                        <p class="text-red-600 text-xl font-bold">$2,152,623.07</p>
+                        <div class="flex gap-1 items-center  mt-2">
+                          <p class="font-semibold">Net Gross for 2022</p>
+                          <img src="./img/infobtn.png" alt="err" />
+                        </div>
+                        <div>
+                            <div class="w-full flex items-center  gap-1 mt-5"> 
+                                <div class="w-[17px] h-[17px] rounded-full bg-red-600"></div>
+                                <p class="text-[15px] font-semibold">Drivers’ Salary</p>
+                                <p class="text-[15px] font-semibold">$800.000.00</p>
+                            </div>
+                            <div class="w-full flex items-center gap-1 mt-5"> 
+                                <div class="w-[17px] h-[17px] rounded-full bg-red-500"></div>
+                                <p class="text-[15px] font-semibold ">Staffs’ Salary</p>
+                                <p class="text-[15px] font-semibold ms-[10px]">$200.000.00</p>
+                            </div>
+                            <div class="w-full flex items-center gap-1 mt-5"> 
+                                <div class="w-[17px] h-[17px] rounded-full bg-red-400"></div>
+                                <p class="text-[15px] font-semibold">Fuel</p>
+                                <p class="text-[15px] font-semibold ms-[70px] ">$700.000.00</p>
+                            </div>
+                            <div class="w-full flex items-center gap-1 mt-5"> 
+                                <div class="w-[17px] h-[17px] rounded-full bg-red-200"></div>
+                                <div>
+                                    <div class="text-[15px] font-semibold">Paid Bills</div>
+                                    <div class="text-[12px]">(Outsourced Trips)</div>
+                                </div>
+                                <p class="text-[15px] font-semibold ms-[10px]">$56.000.00</p>
+                            </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid gap-4 grid-cols-2 grid-rows-1 mt-5">
+              <div class="bg-white px-3 py-4 rounded-xl h-[460px]">
+                <div class="flex items-center justify-between">
+                  <p class="text-current text-2xl font-bold">Profit & Loss</p>
+                  <p class="text-current text-2xl font-bold">2022</p>
+                </div>
+                <hr class="mt-3" />
+                <div class="mt-5">
+                  <p class="text-pul-2 text-xl font-bold">$2,152,623.07</p>
+                  <div class="flex gap-1 items-center  mt-2">
+                    <p class="font-semibold">Net Gross for 2022</p>
+                    <img src="./img/infobtn.png" alt="err" />
+                  </div>
+                  <div class="mt-[50px]">
+                    <p class="text-pul font-bold">$2,152,623.07</p>
+                    <p class="text-jan font-semibold">Income</p>
+                  </div>
+                  <div class="mt-[30px]">
+                    <p class="text-red-500 font-bold">$1,756,000.00</p>
+                    <p class="text-jan font-semibold">Expenses</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white px-3 py-4 rounded-xl h-[460px]">
+                <div class="flex items-center justify-between">
+                  <p class="text-current text-2xl font-bold">Discover More</p>
+                </div>
+                <hr class="mt-3" />
+                <div class="mt-3">
+                  <p class="font-bold text-accounting text-3xl ">Need a Hand with Accounting?</p>
+                </div>
+                <div class="mt-3">
+                  <p class="text-jan text-[1.125rem] font-semibold">Let your QuickManage Experts make your Bookkeeping easy!</p>
+                </div>
+                <div class="mt-4  px-3 py-1 inline-block rounded-full bg-gradient-to-r from-sky-500 to-indigo-500">
+                  <a class=" font-bold text-[18px] text-white tracking-widest " href="#">Learn More</a>
+                </div>
+                <div class="mt-3"> 
+                  <img src="./img/accounting.png" alt="err">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/4 mt-5">
+            <div class="bg-white px-3 py-4 rounded-xl">
+              <div class="flex items-center justify-center">
+                <p class="text-current text-xl font-bold">Rewardable Top 5 Grosses</p>
+              </div>
+              <div class="w-full h-[40px] px-2 flex items-center justify-between mt-3 rounded-md border-2 border-black">
+                <div>
+                  <img src="./img/datepicker-prev.png" alt="err">
+                </div>
+                <div>
+                  <p class="font-semibold">jan 1 - jan 7, 2021</p>
+                </div>
+                <div>
+                  <img src="./img/datepicker-next.png" alt="err">
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-5   w-full border-[0.5px] border-black rounded-full overflow-hidden">
+                <div class="px-3 py-1 text-drivers w-[50%] h-full rounded-full flex items-center justify-center">
+                  <p class="font-bold text-[18px] text-white">Drivers</p>
+                </div>
+                <div class="px-3 py-1 w-[50%] flex items-center justify-center">
+                  <p class="font-bold text-[18px] text-current">Dispatchers</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="flex items-center justify-between mt-5 bg-gray-200 rounded-md px-3 py-2">
+                    <div class="flex gap-5 items-center">
+                      <div class="w-[35px] h-[35px] rounded-full border-[1px] border-black ">
+                        <img class="w-full h-full" src="./img/drivers.png" alt="err">
+                        </div> 
+                        <div>
+                          <p class="text-sm font-semibold text-turabov">Joe Turabov</p>
+                          <div class="bg-12345 p-[1px] text-center text-white font-semibold text-sm mt-1 rounded-md">12345</div>
+                        </div>
+                    </div>  
+                    <div class="mt-5 ">
+                      <p class="font-bold text-md">$15,250.00</p>
+                    </div>                 
+                  </div>
+                  <div class="flex items-center justify-between mt-5 bg-gray-200 rounded-md px-3 py-2">
+                    <div class="flex gap-5 items-center relative">
+                      <div class="w-[35px] h-[35px] rounded-full border-[1px] border-black ">
+                        <img class="w-full h-full" src="./img/drivers.png" alt="err">
+                        </div>
+                        <div class="absolute top-[30%] left-[15px] w-[35px] h-[35px] rounded-full border-[1px] border-black ">
+                          <img class="w-full h-full" src="./img/drivers.png" alt="err">
+                          </div> 
+                        <div>
+                          <p class="text-sm font-semibold text-turabov">Joe Turabov</p>
+                          <div class="bg-12345 p-[1px] text-center text-white font-semibold text-sm mt-1 rounded-md">12345</div>
+                        </div>
+                    </div>  
+                    <div class="mt-5 ">
+                      <p class="font-bold text-md">$15,250.00</p>
+                    </div>                 
+                  </div>
+                  <div class="flex items-center justify-between mt-5 bg-gray-200 rounded-md px-3 py-2">
+                    <div class="flex gap-5 items-center">
+                      <div class="w-[35px] h-[35px] rounded-full border-[1px] border-black ">
+                        <img class="w-full h-full" src="./img/drivers.png" alt="err">
+                        </div> 
+                        <div>
+                          <p class="text-sm font-semibold text-turabov">Joe Turabov</p>
+                          <div class="bg-12345 p-[1px] text-center text-white font-semibold text-sm mt-1 rounded-md">12345</div>
+                        </div>
+                    </div>  
+                    <div class="mt-5 ">
+                      <p class="font-bold text-md">$15,250.00</p>
+                    </div>                 
+                  </div>
+                  <div class="flex items-center justify-between mt-5 bg-gray-200 rounded-md px-3 py-2">
+                    <div class="flex gap-5 items-center">
+                      <div class="w-[35px] h-[35px] rounded-full border-[1px] border-black ">
+                        <img class="w-full h-full" src="./img/drivers.png" alt="err">
+                        </div> 
+                        <div>
+                          <p class="text-sm font-semibold text-turabov">Joe Turabov</p>
+                          <div class="bg-12345 p-[1px] text-center text-white font-semibold text-sm mt-1 rounded-md">12345</div>
+                        </div>
+                    </div>  
+                    <div class="mt-5 ">
+                      <p class="font-bold text-md">$15,250.00</p>
+                    </div>                 
+                  </div>
+                  <div class="flex items-center justify-between mt-5 bg-gray-200 rounded-md px-3 py-2">
+                    <div class="flex gap-5 items-center">
+                      <div class="w-[35px] h-[35px] rounded-full border-[1px] border-black ">
+                        <img class="w-full h-full" src="./img/drivers.png" alt="err">
+                        </div> 
+                        <div>
+                          <p class="text-sm font-semibold text-turabov">Joe Turabov</p>
+                          <div class="bg-12345 p-[1px] text-center text-white font-semibold text-sm mt-1 rounded-md">12345</div>
+                        </div>
+                    </div>  
+                    <div class="mt-5 ">
+                      <p class="font-bold text-md">$15,250.00</p>
+                    </div>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white px-3 py-4 rounded-xl mt-5">
+              <div class="flex items-center justify-center">
+                <p class="text-current text-xl font-bold">Upcoming Birthdays</p>
+              </div>
+              <div class="w-[325px] h-[140px] bg-birthday mt-5 p-2 rounded-sm">
+                <p class="font-bold text-xl flex justify-center ">TODAY IS BIRTHDAY OF</p>
+                  <div class="flex gap-[30px] items-center justify-start">
+                    <img src="./img/marojniy.png" alt="err">
+                    <div>
+                      <p class="font-semibold text-xl">John Smith</p>
+                      <p class="font-bold text-xl">01/01/2022</p>
+                    </div>
+                  </div>
+              </div>
+             <div class="mt-5 bg-gray-200  rounded-sm py-2 px-3">
+              <div class="flex items-center gap-3">
+                <p class="font-semibold text-[1rem]">Frank Madison </p>
+                <i class="font-semibold text-[0.875rem] text-trips">(Driver)</i>
+              </div>
+              <div class="flex w-full  justify-end">
+                <p class="text-[0.875rem]  font-bold">01/01/2022</p>
+              </div>
+             </div>
+             <div class="mt-5 bg-gray-200  rounded-sm py-2 px-3">
+              <div class="flex items-center gap-3">
+                <p class="font-semibold text-[1rem]">Max jarlie </p>
+                <i class="font-semibold text-[0.875rem] text-trips">(Driver)</i>
+              </div>
+              <div class="flex w-full  justify-end">
+                <p class="text-[0.875rem]  font-bold">01/01/2022</p>
+              </div>
+             </div>
+             <div class="mt-5 bg-gray-200  rounded-sm py-2 px-3">
+              <div class="flex items-center gap-3">
+                <p class="font-semibold text-[1rem]">Brian Dispatch</p>
+                <i class="font-semibold text-[0.875rem] text-trips">(Dispatcher)</i>
+              </div>
+              <div class="flex w-full  justify-end">
+                <p class="text-[0.875rem]  font-bold">01/01/2022</p>
+              </div>
+             </div>
+             <div class="mt-5 bg-gray-200  rounded-sm py-2 px-3">
+              <div class="flex items-center gap-3">
+                <p class="font-semibold text-[1rem]">Brian Dispatch</p>
+                <i class="font-semibold text-[0.875rem] text-trips">(Admin)</i>
+              </div>
+              <div class="flex w-full  justify-end">
+                <p class="text-[0.875rem]  font-bold">01/01/2022</p>
+              </div>
+             </div>
+             <div class="mt-5 bg-gray-200  rounded-sm py-2 px-3">
+              <div class="flex items-center gap-3">
+                <p class="font-semibold text-[1rem]">Brian Oliver</p>
+                <i class="font-semibold text-[0.875rem] text-trips">(Accountant)</i>
+              </div>
+              <div class="flex w-full  justify-end">
+                <p class="text-[0.875rem]  font-bold">01/01/2022</p>
+              </div>
+             </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
